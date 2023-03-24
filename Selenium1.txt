@@ -1,0 +1,121 @@
+actiTIME is the wevsites to practice web application .
+close() is use for parent window and quit() use for parent and all other window.
+use Taskmanager to view how much appliaction is running in background 
+
+CSS expresion = tagname[attribute name='attribute value']
+img[class='abc']
+
+x path = xml path 
+ctrl + f for search name 
+
+CSS expresion      =   tagname[attribute name='attribute value']
+xpath by attribute = //tagname[@AttributeName='AttributeValue']
+xpath by name      = //tagname[text()='textvalue']
+xpath by contains  = //tagname[contains(@AttributeName,'partialAttributeValue')]
+                     //tagname[contains(text(),'patialtextvalue')]
+
+independent & dependent = fixed element & dynamic    // one fix one dynamic
+:-1) indentify which is fixed and dynamic
+  2) write the xpath for fixed element
+  3) update same xpath by backward traversing(/..) to find common parent bet two element
+  4) update xpath by write xpath for dynamic element
+
+
+independent & dependent = fixed element & dynamic    // two fix one dynamic
+:-1) xpath fixed element 1
+  2) backword drivarseing
+   
+  3) xpath fixed element 2
+  4) back driversing
+  5) xpath for dynamic element
+
+xpath by Axes = fixed element/axis name::tagname[predicate]/<tr>- parent
+
+//div[text()='SAMSUNG Galaxy A03 Core (Onyx, 32 GB)']/../..//div[@class='_4rR01T']
+//td[text()='Buddhist train']/..//td[@data-title='mail']
+//td[text()="Maharajas' Express"]/..//td[@data-title='mail']
+//div[text()='POCO X5 Pro 5G (Horizon Blue, 256 GB)']/../..//div[@class='_30jeq3 _1_WHN1']
+//div[text()='POCO X5 Pro 5G (Horizon Blue, 256 GB)']/../..//div[@class='_30jeq3 _1_WHN1']
+
+xpath by group index value = (xpath)[index value]  // when we are not getting 1 0f 1 element then we go for xpath by group 
+
+(//div[text()='realme C35 (Glowing Black, 128 GB)'])[1]/../..//div[@class='_30jeq3 _1_WHN1']
+(       xpath                                       )[index value]
+
+
+one of one element :-
+===============
+<div class="xtXmba">Grocery</div>
+<div class="xtXmba">Mobiles &amp; Tablets</div>
+<div class="xtXmba">Flights</div>
+<img loading="lazy" class="_396cs4" alt="TVs &amp; Appliances" src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/904f3c8e7101408b.png?q=100">
+
+button[class='L0Z3Pu']
+//div[text()='Grocery
+//div[text()='Mobiles
+===============
+
+getAtrribute(); ==  to get atrribute value 
+
+Synchronization is the process of matching application loading speed and automation script execution speed.
+if we are not matching speed we get exception  = no such element exception  
+
+
+implicite wait  / intellegent wait :- it also do code optimization(decrease the code lines) and it is save the time. 
+ its only worked for :- 1) findElemnt()
+                        2) findElements()
+
+
+expilicite wait :- create webdriver object.
+
+                   if condition is true it will execute next line ,
+                   if condition is false it will stops the execution for further lines,we will get (TimeoutExecution).
+
+
+Thread.sleep  / blind wait :- because it is blindly wait till milisecond we are provide 
+fluent wait
+page load time out 
+
+
+Select Class :- To Handle the Drop Down action we use Select Class .
+
+Action Class :- whatever action we do with mouse all action we do in action class.
+                1) create object of Action
+                2) In the action constructor we need to pass brouser reff varible as an action
+                3) with the reff varible we need to call non static methods 
+
+JavaScript :- 1) in selenuim is use for Scrolling action for Scroll Up and Scroll Down .
+
+                  A)ScrollBy()
+                  B)ScrollTo()
+
+              2) To work on Disabled button.
+
+Method Of JavaScript :- 1) Execute Script(String,Object)
+                        2) ExecuteAsynchScript()
+
+POPUp :- It is a GUI window which is come on the Top
+
+Type :- JavaScript POPUP 
+        HidenDivision POPUP :- when we do any action on web page the it ocours is called ias HiddenDivision
+        Authentication POPUP :- https://the-internet.herokuapp.com/basic_auth
+                                we can pass the user name and password with the url to handle the popup.
+        NOtification POPUP :- DEvelopers design this popup,To ask the permission from the user.
+                            1) Avoid 
+                            2) Handle
+                            
+        ChromeOPtion is needed
+
+
+CHecks =         
+         1) Inspectable or Not. // HiddenDivision is only inspectable popup 
+         2) Any solution is there in your programming laungauge
+         3) Any solution is there in your Automation Tool ( Selenium )
+         4) Third Party Tool 
+         5) Avoid the POpup
+
+GITHUB :- 
+
+          clone :- Github to Eclipse        Taking the data from the github account to Eclipse 
+          push  :- Eclipse to Github        Taking the data from the Eclipse account to Github 
+          pull  :- Github to Eclipse        Taking the data from the github account to Eclipse 
